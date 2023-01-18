@@ -2,7 +2,7 @@
 
 ## Description des dépendances
 
-JPA : Persist data in SQL stores with Java Persistence API using Spring Data and Hibernate.
+JPA : Ajoute la persistance des données SQL avec JAVA et Spring.
 
 Hibernate : Framework, gère la persistance des données en Base de données relationnelles.
 
