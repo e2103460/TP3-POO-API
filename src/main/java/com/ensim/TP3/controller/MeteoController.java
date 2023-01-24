@@ -65,6 +65,7 @@ public class MeteoController {
                 "token=dacfffe93c5426aa642025036d0013dbd137c6d381440bfc2cff811794e2adac&latlng="
                 + latitude + ',' + longitude + "&world=false";
 
+        // Using Jackson to deserialize data from JSON file
         result = restTemplate.getForObject(url, JsonNode.class);
         Weather forecast = objectMapper.readValue(result.toString(), Weather.class);
 

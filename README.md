@@ -16,7 +16,7 @@ Thymeleaf : Framework, permet de faciliter la gestion des données dynamiques d'
 
 ---
 
-Réponses aux questions : 
+### Réponses aux questions : 
 
 ###### Etape 13 :
 
@@ -57,7 +57,7 @@ il faut rajouter la commande suivante dans le fichier application.properties.
 
 Oui, c'est possible.
 
-##### Etape 30:
+###### Etape 30:
 
 Dans le fichier pom.xml, on rajoute les dependencies liées à Bootstrap : 
 
@@ -81,3 +81,24 @@ Ou, on peut directement importer Bootstrap comme indiqué dans la doc du framewo
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
 ---
+
+### Partie 2 : 
+
+###### Etape 6 :
+
+1. Il faut un token pour réaliser des appels vers l'API. Pour générer cette clé, il suffit de se rendre
+sur le site de Meteo Concept et de créer un compte.
+2. Pour appeler l'API, il faut utiliser l'URL : https://api.meteo-concept.com/api/forecast/daily/0? suivie du token
+généré puis de la latitude et longitude.
+3. Il faut utiliser la méthode GET.
+4. Les paramètres d'appels se passent dans l'URL. cf: MeteoController.java
+5. Les informations désirées se retrouvent dans un fichier JSON ou XML qu'il faut parser pour récupérer les données utiles.
+6. La température se trouve dans le tableau observations du fichier JSON observations : https://api.meteo-concept.com/api/observations/24h/station
+7. Les prévisions se trouvent dans le tableau "forecast" : tmin et tmax.
+
+----
+
+Lien vers le github : https://github.com/e2103460/TP3-POO-API
+
+---
+
